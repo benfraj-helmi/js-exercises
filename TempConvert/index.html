@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Niveau 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+    }
+    label {
+      margin-left: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #4CAF50;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    #result {
+      margin-top: 15px;
+      padding: 10px;
+      background: #e8f5e9;
+      color: #2e7d32;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h1>🌡️ Conversion</h1>
+    <input type="number" id="textBox" value="0" step="any">
+    <br>
+    <input type="radio" id="tof" name="unit">
+    <label for="tof">Celsius ➡ Fahrenheit</label>
+    <br>
+    <input type="radio" id="toc" name="unit">
+    <label for="toc">Fahrenheit ➡ Celsius</label>
+    <br><br>
+    <button type="button" onclick="transform()">Convertir</button>
+    <div id="result"></div>
+  </form>
+
+  
+    
+
+
+  <script src="script.js"></script>
+</body>
+</html>
